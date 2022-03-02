@@ -1,0 +1,133 @@
+body {
+  background: -webkit-linear-gradient(top, #410099 100px, black 950px)!important;
+  font-family: 'Open Sans', "Hiragino Sans", Arial, sans-serif!important;
+}
+
+.promo-header {
+  background-color: #410099;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.promo {
+  padding-top: 10px;
+  color: white;
+}
+
+.ui.borderless.menu {
+  padding-top: 5px;
+  box-shadow: none;
+  border: none;
+  background-color: white;
+  color: #410099;
+}
+
+.navbar {
+
+}
+
+.navbar .item, .navbar a {
+  color: #410099!important;
+  font-weight: bolder!important;
+}
+
+.navbar .premium {
+  color: black;
+  font-weight: bolder;
+}
+
+.ui.grid, .middle {
+  background-color: #410099;
+  color: white;
+  align-content: flex-start;
+}
+
+.ui.middle .row {
+  margin: auto 5%;
+}
+
+.middle{
+  background: -webkit-linear-gradient(#410099, #000);
+}
+
+.middle-top {
+  background-image: url(https://derf9v1xhwwx1.cloudfront.net/image/upload/q_60/cste/3216c92b-f2e9-4cde-8959-48353a33d07e.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-x: 60%;
+  min-height: 10em;
+  /*max-height: 60em;*/
+}
+
+.watch {
+  color: white;
+  background: #00A5DF;
+  font-weight: bolder;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 8%;
+}
+
+.content-description h1 {
+  font-size: 40px;
+}
+
+.content-description h3 {
+  font-size: 20px;
+}
+
+.content-description {
+  padding-top: 5%;
+  margin-right: 50%;
+  margin-left: 8%;
+}
+
+.middle-middle .anime-list .ui.container {
+  margin: 0.2em;
+}
+
+.middle-middle .anime-list img {
+  border-radius: 20px;
+  margin-right: 0.5em;
+  height: 19em;
+}
+
+.middle-bottom {
+  background: rgb(65, 0, 153) center center;
+  background: radial-gradient(circle, rgba(65, 0, 153, 1) 30%, rgba(0, 0, 0, 1) 100%);
+}
+
+.trial .ui.container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.trial a {
+  color: white;
+  background: #FFC72C;
+}
+
+.trial h1 {
+  font-size: 40px;
+}
+
+.trial p {
+  font-size: 20px;
+}
+
+.footer-background {
+  margin-top: 1em;
+  margin-bottom: 3%;
+  color: white;
+  padding: 1% 2%;
+  background-color: #410099;
+}
+
+.footer-background .footer-navigation a.item {
+  color: white!important;
+}
+
+.social-media .Image {
+  width: 20px;
+  height: 20px;
+}
