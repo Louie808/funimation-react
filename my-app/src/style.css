@@ -22,57 +22,30 @@ body {
   color: #410099;
 }
 
-.navbar {
-
-}
-
 .navbar .item, .navbar a {
   color: #410099!important;
   font-weight: bolder!important;
 }
 
-.navbar .premium {
-  color: black;
-  font-weight: bolder;
-}
-
 .ui.grid, .middle {
-  background-color: #410099;
+  background: none;
   color: white;
   align-content: flex-start;
 }
 
-.ui.middle .row {
+.middle .Row {
   margin: auto 5%;
 }
 
-.middle{
+.middle-menu {
   background: -webkit-linear-gradient(#410099, #000);
 }
 
 .middle-top {
-  background-image: url(https://derf9v1xhwwx1.cloudfront.net/image/upload/q_60/cste/3216c92b-f2e9-4cde-8959-48353a33d07e.png);
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position-x: 60%;
-  min-height: 10em;
-  /*max-height: 60em;*/
+  background: none!important;
 }
 
-.watch {
-  color: white;
-  background: #00A5DF;
-  font-weight: bolder;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: 8%;
-}
-
-.content-description h1 {
-  font-size: 40px;
-}
-
-.content-description h3 {
+.content-description p {
   font-size: 20px;
 }
 
@@ -82,13 +55,9 @@ body {
   margin-left: 8%;
 }
 
-.middle-middle .anime-list .ui.container {
-  margin: 0.2em;
-}
 
-.middle-middle .anime-list img {
+.middle-middle .anime-image-list img {
   border-radius: 20px;
-  margin-right: 0.5em;
   height: 19em;
 }
 
@@ -97,9 +66,8 @@ body {
   background: radial-gradient(circle, rgba(65, 0, 153, 1) 30%, rgba(0, 0, 0, 1) 100%);
 }
 
-.trial .ui.container {
-  padding-top: 2em;
-  padding-bottom: 2em;
+.trial {
+  padding: 2.5em 5em;
 }
 
 .trial a {
@@ -107,13 +75,14 @@ body {
   background: #FFC72C;
 }
 
-.trial h1 {
+.trialHeader {
   font-size: 40px;
 }
 
-.trial p {
-  font-size: 20px;
+.trialContent {
+  font-size: 1em;
 }
+
 
 .footer-background {
   margin-top: 1em;
