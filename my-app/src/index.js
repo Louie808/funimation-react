@@ -4,17 +4,10 @@ import './style.css';
 import 'semantic-ui-css/semantic.min.css';
 import { Container, Header, Image, Menu, List, Item, Icon, Button, Dropdown, Grid, Sticky } from 'semantic-ui-react';
 
-const red = { backgroundColor: 'red', }
-const yellow = { backgroundColor: 'yellow' }
-
 class PromoBar extends React.Component {
   render() {
-    const ItemAStyle = {
-      color: '#410099',
-      fontWeight: 'bolder',
-    }
     return (
-        <Container textAlign='center'>
+        <Container fluid className={'promo-header'} textAlign='center'>
           <a href="#">
             <div className="promo">
               <p>THE NEXT LEVEL OF ANIME HAS ARRIVED - CLICK HERE TO LEARN MORE</p>
@@ -32,27 +25,26 @@ class TopMenu extends React.Component {
       fontWeight: 'bolder',
     }
     return (
-        <Sticky>
         <Menu borderless className='navbar'>
           <Container>
             <Menu.Item as='a'>
               <Image src="https://static.funimation.com/static/img/common/funimation-logo.svg" alt='Funimation Logo'/>
             </Menu.Item>
-            <Dropdown item text='STREAM'>
+            <Dropdown item text='STREAM' icon={'none'}>
               <Dropdown.Menu>
                 <Dropdown.Item><a href='#'>ALL TITLES</a></Dropdown.Item>
                 <Dropdown.Item><a href='#'>CURRENT SEASON</a></Dropdown.Item>
                 <Dropdown.Item><a href='#'>SCHEDULE</a></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Dropdown item text='DISCOVER'>
+            <Dropdown item text='DISCOVER' icon={'none'}>
               <Dropdown.Menu>
                 <Dropdown.Item><a href='#'>GAMES</a></Dropdown.Item>
                 <Dropdown.Item><a href='#'>NEWS</a></Dropdown.Item>
                 <Dropdown.Item><a href='#'>THEATRICAL</a></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Dropdown item text='SHOP'>
+            <Dropdown item text='SHOP' icon={'none'}>
               <Dropdown.Menu>
                 <Dropdown.Item><a href='#'>HOME VIDEO</a></Dropdown.Item>
                 <Dropdown.Item><a href='#'>PRE-ORDERS</a></Dropdown.Item>
@@ -69,33 +61,38 @@ class TopMenu extends React.Component {
             <Menu.Item><a href='#'>LOGIN</a></Menu.Item>
           </Container>
         </Menu>
-        </Sticky>
     );
   }
 }
 
 class TopMiddle extends React.Component {
   render() {
-    const contentHeader = { paddingTop: '10%', color: 'white', fontSize: '40px', fontWeight: '000' }
-    const contentDescriptionStyle = { paddingTop: '5%', marginLeft: '8%', fontWeight: '600', }
-    const learnMore = { color: 'white', background: '#00A5DF', fontWeight: 'boldest', padding: '15px 50px', }
+    const contentHeader = { lineHeight: '55.8px', paddingTop: '10%', color: 'white', fontSize: '60px', fontWeight: '000' }
+    const contentDescriptionStyle = {
+      color: 'white',
+      paddingTop: '5%',
+      paddingRight: '2%',
+      marginLeft: '8%',
+      fontWeight: '300',
+    };;
+    const learnMore = { color: 'white', background: '#00A5DF', fontWeight: 'boldest', padding: '15px 60px', }
     const rightContent = {
-      backgroundImage: 'url(https://derf9v1xhwwx1.cloudfront.net/image/upload/q_60/cste/303b37dc-4ec7-48a4-9eb0-355cb5eee672.png)',
-      backgroundSize: '80%',
-      backgroundRepeat: 'no-repeat',
+      // background-image: 'url(https://derf9v1xhwwx1.cloudfront.net/image/upload/q_60/cste/303b37dc-4ec7-48a4-9eb0-355cb5eee672.png)',
+      // backgroundSize: '80%',
+      // backgroundRepeat: 'no-repeat',
       minHeight: '10em',
-      height: '27.9em',
-      position: 'relative',
+      maxHeight: '34em',
+      // position: 'relative',
     }
     return (
-        <Grid container columns={'equal'}>
-          <Grid.Column floated={'left'} textAlign={'left'} style={contentDescriptionStyle}>
+        <Grid columns={'equal'}>
+          <Grid.Column container floated={'left'} textAlign={'left'} style={contentDescriptionStyle}>
             <h1 style={contentHeader}>TAKING ANIME TO THE NEXT LEVEL</h1>
-            <p>Funimation is officially moving to Crunchyroll! The ultimate anime experience awaits</p>
+            <p style={{fontSize: '16px'}}>Funimation is officially moving to Crunchyroll! The ultimate anime experience awaits</p>
             <Button size={'medium'} content='LEARN MORE' style={learnMore}/>
           </Grid.Column>
-          <Grid.Column floated={'right'} style={rightContent}>
-            {/*<Image  src='https://derf9v1xhwwx1.cloudfront.net/image/upload/q_60/cste/303b37dc-4ec7-48a4-9eb0-355cb5eee672.png' alt="Hero Spotlight"/>*/}
+          <Grid.Column position='right' floated={'right'}>
+            <Image style={rightContent} src='https://derf9v1xhwwx1.cloudfront.net/image/upload/q_60/cste/303b37dc-4ec7-48a4-9eb0-355cb5eee672.png' alt="Hero Spotlight"/>
           </Grid.Column>
         </Grid>
     );
@@ -145,7 +142,7 @@ class MiddleMiddle extends React.Component {
       'Teasing Master Takagi-san S3',
 
     ];
-    const white = { color: 'white' };
+    const white = { fontSize: '16px' , color: 'white' };
     return (
         <Container fluid style={{ paddingLeft: '7%' }} textAlign={'left'}>
           <section className='anime-list'>
@@ -226,7 +223,7 @@ class BottomMiddle extends React.Component {
   render() {
 
     return (
-        <Container className='trial' textAlign={'center'}>
+        <Container style={{color: 'white'}} className='trial' textAlign={'center'}>
           <h1 className='trialHeader'>Stream Ad-Free Anime with <br/> Premium Plus for $7.99 a month</h1>
           <p className='trialContent'>Enjoy over 10,000 episodes and movies from our huge library of subs and dubs, featuring a deep
             catalog of big hits, fan favorites and all-time classics, as well as the latest shows out of Japan.</p>
@@ -285,7 +282,6 @@ class FooterMenu extends React.Component {
                   </List>
                 </Grid.Column>
               </Grid.Row>
-
               <Grid.Row>
                 <Grid.Column width={8}>
                   <Image src="https://derf9v1xhwwx1.cloudfront.net/image/upload/q_60/cste/2b6e796d-2275-41a6-8b90-5d2b3f89f680.png" alt="Sony Pictures"/>
@@ -306,8 +302,10 @@ class Funimation extends React.Component {
   render() {
     return (
         <div>
-          <PromoBar/>
-          <TopMenu/>
+          <Sticky>
+            <PromoBar/>
+            <TopMenu/>
+          </Sticky>
           <MiddleMenu/>
           <FooterMenu/>
         </div>

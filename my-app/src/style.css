@@ -1,6 +1,10 @@
 body {
-  background-color: #410099!important;
+  background: -webkit-linear-gradient(top, #410099 100px, black 950px) no-repeat center center fixed !important;
   font-family: 'Open Sans', "Hiragino Sans", Arial, sans-serif!important;
+}
+
+.ui.sticky {
+  background-color: #410099;
 }
 
 .promo-header {
@@ -10,8 +14,8 @@ body {
 
 .promo {
   font-size: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 1px;
   color: white;
 }
 
@@ -29,7 +33,7 @@ body {
   font-weight: bolder!important;
 }
 
-.ui.grid, .middle {
+.middle {
   background: none;
   color: white;
   align-content: flex-start;
